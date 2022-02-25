@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+    html {
+        font-family: 'Source Code Pro', monospace;
+        background-color: #111;
+    }
+    .navbar {
+        color: #b6b6b6;
+        border-bottom: 1px solid rgb(49,49,49);
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        width: 100%;
+        background-color: rgba(17, 17, 17, 0.8);
+        backdrop-filter: blur(25px);
+    }
+
+    .navbar .logo {
+        margin: 20px;
+        float: left;
+        font-size: 20px;
+    }
+    .navbar .logo:hover {
+        color: #fff;
+    }
+
+    .navbar a {
+        color: #b6b6b6;
+        float: right;
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 2px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .navbar a:hover{
+        background-color: #e9e9e9;
+        color: #333;
+    }
+
+    .navbar-right {
+        float: right;
+        margin-right: 30px;
+        padding: 15px;
+    }
+
+    @media screen and (max-width:600px) {
+        .navbar {
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid rgb(49,49,49);
+        }
+    }
+
+    @media screen  and (max-width:900px){
+        .navbar-right {
+            margin-right: 10px;
+        }
+    }
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            AYMAN
+        </div>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+</body>
+</html>
